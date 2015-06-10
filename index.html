@@ -1,7 +1,7 @@
       <header class="header">
         <ul class="nav">
           <li><a href="#" class="button">Home</a></li>
-          <li><a href="#" class="button">Cart</a></li>
+          <li><a href="#" class="cart_button">Cart</a></li>
         </ul>
       </header>
 
@@ -26,8 +26,8 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
             <div class="large-6 columns">
               <p>Copyright All-In-Nutrition LLC.</p>
             </div>
-            <div class="large-6 columns">
-              <ul class="inline-list right">
+            <div class="Footer">
+              <ul class="bottom">
                 <li><a href="#">About Us</a></li>
             </div>
           </div>
@@ -36,9 +36,15 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
 
 
 <style>
-.nav {
+.nav li{
   color: #2E3532;
-  opacity: 0.5; 
+  opacity: 0.5;
+  display: inline;
+  padding: 11px;
+}
+
+.cart_button {
+  list-style-image: url('')
 }
 
 .header {
