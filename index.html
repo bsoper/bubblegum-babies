@@ -1,49 +1,70 @@
-      
+<!DOCTYPE html>
 
+<!-- Meta Page/Site formatting -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
+
+  <title>All-In-Nutrition LLC -- It's All or Nothing</title>
+  <meta name="description" content="Site for All-In-Nutrition Bars" />
+
+</head>
+
+<!-- Begin Content -->
+<body>
 <!-- Create/Format Nav Bar-->
-<header class="header">
-  <ul class="nav">
+  <ul class="nav nav-tabs">
     <li><a href="#" class="button">Home</a></li>
+    <li><a href="#" class="button">Cart</a></li>
+    <li><a href="#" class="button">About Us</a></li>
   </ul>
-  <img> 
-</header>
 
+<!-- Add in Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
-<!-- Layout of Logo -->
-<div class="row">
-  <div class="logo">
-    <h1>ALL IN NUTRITION</h1>
-    <h2><img src="E:\xampp\htdocs\bubblegum-babies\logo.jpg"/></h2>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://i.imgur.com/9OWPeap.jpg" alt="ingredients">
+    </div>
+
+    <div class="item">
+      <img src="http://www.surftin.com/images/free-dual-screen-windows_953541.jpg" alt="partners">
+    </div>
+
+    <div class="item">
+      <img src="http://www.northmeridiantitle.com/wp-content/uploads/2014/06/Slide3_sunrise-1920x720.jpg" alt="team">
+    </div>
   </div>
+
+  <!-- Create left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
-<!-- Shopify Buy-Now Button-->
-<div data-button_background_color="7db461" data-button_text_color="ffffff" data-buy_button_text="Buy now" data-display_size="compact" data-embed_type="product" data-has_image="true" data-product_handle="wicked-maple-bar" data-product_name="" data-redirect_to="checkout" data-shop="bubblegum-babies.myshopify.com"></div>
-<script type="text/javascript">
-document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
-</script>
-<noscript><a href="https://bubblegum-babies.myshopify.com/cart/2453490499:1" target="_blank">Buy Wicked Maple Bar</a></noscript>
 
-<!-- Bottom Toolbar                      -->
-<!-- To-do:                              -->
-<!-- - Add Boxes for different products  -->
-<!-- - Research "large-12 Columns" class -->
-<footer class="footer">
-  <div class="large-12 columns">
-    <hr/>
-    <div class="copyright">
-      <div class="large-6 columns">
-        <p>Copyright All-In-Nutrition LLC.</p>
-      </div>
-      <div class="Footer">
-        <ul class="bottom">
-          <li><a href="#">About Us</a></li>
-      </div>
-    </div>
-  </div> 
-</footer>
-
-
+<!-- Add Shop Buttons -->
+<div id="shop">
+    <a id="shop1" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop1.png" alt=""/></a>
+    <a id="shop2" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop2.png" alt=""/></a>
+    <a id="shop3" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop3.png" alt=""/></a>
+    <span class="stretch"></span>
+</div>​
 
 <!-- Outline Style of Page -->
 <style>
@@ -54,20 +75,21 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
   padding: 11px;
 }
 
+.shop shop-buttons {
+  display: inline-block;
+}
+
+.shop li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+}
 .logo h2 img {
   position: fixed;
 }
 .cart_button {
   display: inline;
-}
-
-.header {
-  background-color: #FFFDFF;
-}
-
-.copyright {
-  background-color: #2E3532;
-  color: white;
 }
 
 .footer {
@@ -78,6 +100,27 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
 .logo {
     background-color: #FFFDFF;
 }
-</style>
 
-    
+#shop {
+  text-align: justify;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  }
+#shop > div {
+  width: 100px; /* Declare your value. Can be in relative units. */
+  display: inline-block;
+  vertical-align: top;
+
+  /* IE fix. */
+  *display: inline;
+  zoom: 1;
+  }
+#shop:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+    }
+}
+</style>
+</body>
