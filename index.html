@@ -18,9 +18,9 @@
 <body>
 <!-- Create/Format Nav Bar-->
   <ul class="nav nav-tabs">
-    <li><a href="#" class="button">Home</a></li>
-    <li><a href="#" class="button">Cart</a></li>
-    <li><a href="#" class="button">About Us</a></li>
+    <li><a href="index.html" class="button">Home</a></li>
+    <li><a href="ain/about.html" class="button">About Us</a></li>
+    <li style="float: right"><a href="cart.html" class="cart-button"><img src="cart_icon.png" alt="cart-img"/></a></li>
   </ul>
 
 <!-- Add in Carousel -->
@@ -34,15 +34,21 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
+      <a href="bar.html">
       <img src="http://i.imgur.com/9OWPeap.jpg" alt="ingredients">
+      </a>
     </div>
 
     <div class="item">
+      <a href="#partners">
       <img src="http://www.surftin.com/images/free-dual-screen-windows_953541.jpg" alt="partners">
+      </a>
     </div>
 
     <div class="item">
+      <a href="#team">
       <img src="http://www.northmeridiantitle.com/wp-content/uploads/2014/06/Slide3_sunrise-1920x720.jpg" alt="team">
+      </a>
     </div>
   </div>
 
@@ -60,14 +66,21 @@
 
 <!-- Add Shop Buttons -->
 <div id="shop">
-    <a id="shop1" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop1.png" alt=""/></a>
-    <a id="shop2" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop2.png" alt=""/></a>
-    <a id="shop3" href="#"><img src="E:\xampp\htdocs\bubblegum-babies\shop3.png" alt=""/></a>
+    <a id="shop1" href="#"><img src="https://raw.githubusercontent.com/bsoper/bubblegum-babies/master/shop1.png" alt=""/></a>
+    <a id="shop2" href="#"><img src="https://raw.githubusercontent.com/bsoper/bubblegum-babies/master/shop2.png" alt=""/></a>
+    <a id="shop3" href="#"><img src="https://raw.githubusercontent.com/bsoper/bubblegum-babies/master/shop3.png" alt=""/></a>
     <span class="stretch"></span>
-</div>​
+</div>
+
+<div data-embed_type="product" data-shop="all-in-nutrition-7.myshopify.com" data-product_name="Wicked Maple Bar" data-product_handle="wicked-maple-bar" data-has_image="false" data-display_size="compact" data-redirect_to="checkout" data-buy_button_text="Buy now" data-button_background_color="7db461" data-button_text_color="ffffff"></div>
+<script type="text/javascript">
+document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+</script>
+<noscript><a href="https://all-in-nutrition-7.myshopify.com/cart/4019941251:1" target="_blank">Buy Wicked Maple Bar</a></noscript>
 
 <!-- Outline Style of Page -->
 <style>
+    
 .nav li{
   color: #2E3532;
   opacity: 0.5;
@@ -88,8 +101,8 @@
 .logo h2 img {
   position: fixed;
 }
-.cart_button {
-  display: inline;
+.nav li cart_button {
+    color: #000000
 }
 
 .footer {
